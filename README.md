@@ -1,2 +1,2 @@
-# weather-dashboard
-A predictive weather dashboard using the OpenWeather API, featuring dynamically updated HTML and CSS.
+# Weather Dashboard | README incoming...
+## A predictive weather dashboard using the OpenWeather API, featuring dynamically updated HTML and CSS.
