@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet"
+          href="./assets/css/style.css">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+</head>
+
+<header>
+    <!--Jumbo title here-->
+    <div class="container s12 l3">
+        <div class="row">
+            <h5>Weather<br>Dashboard</h5>
+            <p id="subhead">Search for a 5-Day Forecast</p>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="container s12">
+        <!--Main staging area for JS magic-->
+        <main>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12 m3 l3">
+                        <i class="material-icons">location_city</i>
+                        <input id="input_text"
+                               type="text"
+                               data-length="50"
+                               placeholder="Search by City">
+                        <button type="submit"
+                        class="waves-effect teal lighten-4 btn-small"
+                                id="search"><i class="material-icons">search</i></button>
+                    </div>
+                    <!--Returned results populate card-->
+                    <div id="resultCard"
+                         class="col s12 m9 l9">
+                        <div id="populateResult"
+                             class="teal lighten-5">
+                            <!--content-->
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+
+
+    <!-- jQuery script tag -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
