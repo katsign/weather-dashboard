@@ -1,11 +1,18 @@
 h5 {
     font-size: 30px;
 }
+#clearHistory {
+    margin-top: 2rem;
+}
 /* test */
 #populateResult {
-    height: 240px;
+    padding: 1.5rem;
+}
+#forecastTitle{
+    padding: 1.5rem;
 }
  .row .input-field input:focus {
    border-bottom: 1px solid black !important;
    box-shadow: 0 1px 0 0 black !important;
  }
+ 

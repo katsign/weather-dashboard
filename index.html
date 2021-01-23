@@ -36,18 +36,29 @@
                         <i class="material-icons">location_city</i>
                         <input id="input_text"
                                type="text"
+                               onfocus="this.value=''"
                                data-length="50"
                                placeholder="Search by City">
                         <button type="submit"
-                        class="waves-effect teal lighten-4 btn-small"
+                                class="waves-effect teal lighten-4 btn-small"
                                 id="search"><i class="material-icons">search</i></button>
+                        <form id="history"></form>
+                        <button class="waves-effect blue-grey lighten-3 btn-small"
+                                id="clearHistory">Clear History</button>
                     </div>
                     <!--Returned results populate card-->
                     <div id="resultCard"
                          class="col s12 m9 l9">
                         <div id="populateResult"
                              class="teal lighten-5">
-                            <!--content-->
+                        </div>
+                        <div class="row"
+                             id="displayForecast">
+                            <div>
+                                <h5 id="forecastTitle">5-Day Forecast</h5>
+                            </div>
+                        </div>
+                        <div class="row">
                         </div>
                     </div>
                 </div>
@@ -60,6 +71,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
 </body>
