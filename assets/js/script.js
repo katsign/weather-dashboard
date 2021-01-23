@@ -51,7 +51,6 @@ $(document).ready(function () {
                 $('<p>').attr('class', 'cardData').attr('id','wsAnchor').text('Wind Speed: ' + windSpeed + 'mph').appendTo('#populateResult');
 
 
-
                 var lat = response.coord.lat;
                 var lon = response.coord.lon;
                 var uvURL = 'https://api.openweathermap.org/data/2.5/uvi?lat=' + lat + '&lon=' + lon + '&appid=6ee75339838f57228cbda7f75505c443';
@@ -63,8 +62,21 @@ $(document).ready(function () {
                     var uviResults = uviResponse;
                     var uvi = uviResults.value;
                     $('<span>').attr('class','new badge').attr('id', 'uvBadge').attr('data-badge-caption', '').text('UV Index: ' + uvi).appendTo('#wsAnchor');
-                  });
 
+                    if (uvi < 3) {
+                        $('#uvBadge').css('background-color', 'green');
+                      } else if (uvi < 6) {
+                        $('#uvBadge').css('background-color', 'yellow');
+                      } else if (uvi < 8) {
+                        $('#uvBadge').css('background-color', 'orange');
+                      } else if (uvi < 11) {
+                        $('#uvBadge').css('background-color', 'red');
+                      } else {
+                        $('uvBadge').css('background-color', 'purple');
+                      }
+
+                    
+                  });
                   
 
             })
