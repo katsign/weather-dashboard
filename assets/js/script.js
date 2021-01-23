@@ -38,13 +38,19 @@ $(document).ready(function () {
                 var humidity = results.main.humidity;
                 var windSpeed = results.wind.speed;
                 var date = moment().format('L');
+                var weatherIcon = results.weather[0].icon;
+                var cardImage = $('<img>').attr({ 'src': 'http://openweathermap.org/img/wn/' + weatherIcon + '@2x.png', 'alt': 'condition icon' });
+                
 
 
                 $('<h3>').attr('id', 'cardTitle').text(name).appendTo('#populateResult');
+                $('<h6>').attr('id', 'day').text(date).appendTo('#cardTitle');
+                $(cardImage).appendTo('#populateResult');
                 $('<hr>').appendTo('#populateResult');
                 $('<p>').attr('class', 'cardData').text('Temperature: ' + temperature + '°F').appendTo('#populateResult');
                 $('<p>').attr('class', 'cardData').text('Humidity: ' + humidity + '%').appendTo('#populateResult');
                 $('<p>').attr('class', 'cardData').text('Wind Speed: ' + windSpeed + 'mph').appendTo('#populateResult');
+
 
 
 
@@ -59,5 +65,7 @@ $(document).ready(function () {
     }
 
     $('#search').on('click', getResult)
+
+
 
 });

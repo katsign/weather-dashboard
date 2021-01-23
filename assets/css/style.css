@@ -8,6 +8,12 @@ h5 {
 #populateResult {
     padding: 1.5rem;
 }
+#day {
+    color: grey;
+    padding: 1rem;
+    display: inline;
+    letter-spacing: .5px;
+}
 #forecastTitle{
     padding: 1.5rem;
 }
