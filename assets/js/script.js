@@ -40,7 +40,6 @@ $(document).ready(function () {
                 var date = moment().format('L');
                 var weatherIcon = results.weather[0].icon;
                 var cardImage = $('<img>').attr({ 'src': 'http://openweathermap.org/img/wn/' + weatherIcon + '@2x.png', 'alt': 'condition icon' });
-                
 
 
                 $('<h3>').attr('id', 'cardTitle').text(name).appendTo('#populateResult');
@@ -49,15 +48,23 @@ $(document).ready(function () {
                 $('<hr>').appendTo('#populateResult');
                 $('<p>').attr('class', 'cardData').text('Temperature: ' + temperature + '°F').appendTo('#populateResult');
                 $('<p>').attr('class', 'cardData').text('Humidity: ' + humidity + '%').appendTo('#populateResult');
-                $('<p>').attr('class', 'cardData').text('Wind Speed: ' + windSpeed + 'mph').appendTo('#populateResult');
-
+                $('<p>').attr('class', 'cardData').attr('id','wsAnchor').text('Wind Speed: ' + windSpeed + 'mph').appendTo('#populateResult');
 
 
 
                 var lat = response.coord.lat;
                 var lon = response.coord.lon;
+                var uvURL = 'https://api.openweathermap.org/data/2.5/uvi?lat=' + lat + '&lon=' + lon + '&appid=6ee75339838f57228cbda7f75505c443';
 
-                
+                $.ajax({
+                    url: uvURL,
+                    method: 'GET'
+                  }).then(function(uviResponse) {
+                    var uviResults = uviResponse;
+                    var uvi = uviResults.value;
+                    $('<span>').attr('class','new badge').attr('id', 'uvBadge').attr('data-badge-caption', '').text('UV Index: ' + uvi).appendTo('#wsAnchor');
+                  });
+
                   
 
             })
