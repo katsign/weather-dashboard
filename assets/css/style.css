@@ -1,8 +1,14 @@
 h5 {
     font-size: 30px;
 }
+#search {
+margin-bottom: .5rem;
+}
+#past-search {
+    margin-top: .5rem;
+}
 #clearHistory {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 /* test */
 #populateResult {
