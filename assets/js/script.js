@@ -59,7 +59,7 @@ $(document).ready(function () {
         }
 
         //Creates the Daily Forecast blurbs
-        $('#Forecast').empty();
+        $('#displayForecast').empty();
         for (var i = 1; i < 6; i++) {
           var forecastCard = $('<div>').attr('id', 'forecastCard').attr('class', 'col s2 m1 l1');
           var readableDate = new Date(forecastResults.daily[i].dt * 1000).toLocaleDateString("en-US");
