@@ -22,8 +22,8 @@ $(document).ready(function () {
       var date = moment().format('L');
       var weatherIcon = results.weather[0].icon;
       var cardImage = $('<img>').attr({ 'src': 'http://openweathermap.org/img/wn/' + weatherIcon + '@2x.png', 'alt': 'condition icon' });
-      $('<h3>').attr('id', 'cardTitle').text(name).appendTo('#populateResult');
-      $('<h6>').attr('id', 'day').text(date).appendTo('#cardTitle');
+      $('<h2>').attr('id', 'cardTitle').text(name).appendTo('#populateResult');
+      $('<h6>').attr('id', 'day').text(date).attr('class','label').appendTo('#cardTitle');
       $(cardImage).appendTo('#populateResult');
       $('<hr>').appendTo('#populateResult');
       $('<p>').attr('class', 'cardData').text('Temperature: ' + temperature + '°F').appendTo('#populateResult');
@@ -59,7 +59,7 @@ $(document).ready(function () {
         }
 
         //Creates the Daily Forecast blurbs
-        $('#postForecast').empty();
+        $('#Forecast').empty();
         for (var i = 1; i < 6; i++) {
           var forecastCard = $('<div>').attr('id', 'forecastCard').attr('class', 'col s2 m1 l1');
           var readableDate = new Date(forecastResults.daily[i].dt * 1000).toLocaleDateString("en-US");
