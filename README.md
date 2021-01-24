@@ -1,5 +1,5 @@
-# Minimalist Weather Dashboard
-## A predictive weather dashboard using the OpenWeather API, featuring dynamically updated HTML and CSS.
+# Minimalist Weather Dashboard :cloud:
+## A predictive weather dashboard that uses the OpenWeatherMap API, featuring dynamically updated HTML and CSS.
 Following closely with the given acceptance criteria, I built a minimalist in-browser weather app that searches by city using [OpenWeatherMap](https://home.openweathermap.org/). I used everything I've learned about coding so far to build an HTML shell, populate it with DOM manipulation, and style the end result with a new CSS framework [Materialize](https://materializecss.com/).
 
 ## Demo of Searching by City
@@ -14,11 +14,11 @@ Following closely with the given acceptance criteria, I built a minimalist in-br
 ![Demo of Day Planner](./assets/screenshots/history.png)
 
 ![Demo of Day Planner](./assets/screenshots/empty.png)
-Above: the unpopulated div and button list after local storage has been cleared.
+Above: the unpopulated div and button list after local storage has been cleared. This also displays when a user is using the app for the first time.
 
 ## Credits
 
-### :sparkles: [Materialize](https://materializecss.com/)
+### :sparkles: [Materialize CSS](https://materializecss.com/)
 ### :cloud: [Open Weather Map](https://home.openweathermap.org/)
 ### :blue_book: [Google Fonts](https://code.jquery.com/)
 ### :globe_with_meridians: [jQuery CDN](https://fonts.google.com/)
