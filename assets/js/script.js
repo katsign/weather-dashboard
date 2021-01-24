@@ -61,7 +61,7 @@ $(document).ready(function () {
 
                     $('#postForecast').empty();
                     for (var i=1; i < 6; i++) {
-                      var forecastCard = $('<div>').attr('id', 'forecastCard').attr('class','col s6 m1 l1');
+                      var forecastCard = $('<div>').attr('id', 'forecastCard').attr('class','col s2 m1 l1');
                       var readableDate = new Date(forecastResults.daily[i].dt * 1000).toLocaleDateString("en-US");
                       var dailyIcon = forecastResults.daily[i].weather[0].icon;
                       var icon = $('<img>').attr({ 'src': 'http://openweathermap.org/img/wn/' + dailyIcon + '@2x.png', 'alt': 'condition icon' });
