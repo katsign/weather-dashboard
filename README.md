@@ -22,5 +22,5 @@ Above: the unpopulated div and button list after local storage has been cleared.
 
 ### :sparkles: [Materialize CSS](https://materializecss.com/)
 ### :cloud: [Open Weather Map](https://home.openweathermap.org/)
-### :blue_book: [Google Fonts](https://code.jquery.com/)
-### :globe_with_meridians: [jQuery CDN](https://fonts.google.com/)
+### :globe_with_meridians: [jQuery CDN](https://code.jquery.com/)
+### :blue_book: [Google Fonts](https://fonts.google.com/)
