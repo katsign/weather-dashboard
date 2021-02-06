@@ -1,6 +1,8 @@
 # Minimalist Weather Dashboard :cloud:
 ## A predictive weather dashboard that uses the OpenWeatherMap API, featuring dynamically updated HTML and CSS.
-Following closely with the given acceptance criteria, I built a minimalist in-browser weather app that searches by city using [OpenWeatherMap](https://home.openweathermap.org/). I used everything I've learned about coding so far to build an HTML shell, populate it with DOM manipulation, and style the end result with a new CSS framework [Materialize](https://materializecss.com/).
+Following closely with the given acceptance criteria, I built a minimalist in-browser weather app that searches by city using [OpenWeatherMap](https://home.openweathermap.org/). I used everything I've learned about coding so far to build an HTML shell, populate it with DOM manipulation, and style the end result with a new-to-me CSS framework, [Materialize](https://materializecss.com/).
+
+### Link to deployment: https://katsign.github.io/weather-dashboard/
 
 ## Demo of Searching by City
 
