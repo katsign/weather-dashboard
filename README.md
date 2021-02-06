@@ -5,15 +5,15 @@ Following closely with the given acceptance criteria, I built a minimalist in-br
 ## Demo of Searching by City
 
 ### The following images show the browser view for the search, "Kansas City." Users are met with a search input that will trigger an API call for that city, retrieving the current weather and the next five days' forecasts.
-![Demo of Day Planner](./assets/screenshots/kc1.png)
+![Demo of Weather Dashboard](./assets/screenshots/kc1.png)
 
-![Demo of Day Planner](./assets/screenshots/kc2.png)
+![Demo of Weather Dashboard](./assets/screenshots/kc2.png)
 
 ### The user can then search as many queries as they want as long as they are using the city name, and when finished browsing, clear the saved searches from the Search History list.
 
-![Demo of Day Planner](./assets/screenshots/history.png)
+![Demo of Weather Dashboard](./assets/screenshots/history.png)
 
-![Demo of Day Planner](./assets/screenshots/empty.png)
+![Demo of Weather Dashboard](./assets/screenshots/empty.png)
 Above: the unpopulated div and button list after local storage has been cleared. This also displays when a user is using the app for the first time.
 
 ## Credits
