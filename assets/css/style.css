@@ -38,8 +38,13 @@ margin-bottom: .5rem;
 #forecastCard {
 margin:2.5rem;
 }
- .row .input-field input:focus {
-   border-bottom: 1px solid black !important;
-   box-shadow: 0 1px 0 0 black !important;
- }
+input,
+textarea {
+    font-family: 'Roboto', sans-serif;
+}
+input:focus,
+textarea:focus {
+    border-bottom: 1px solid black !important;
+    box-shadow: 0 1px 0 0 black !important;
+}
  
